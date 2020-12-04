@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>Volunteer Form</title>
+  
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js" integrity="sha512-WNLxfP/8cVYL9sj8Jnp6et0BkubLP31jhTG9vhL/F5uEZmg5wEzKoXp1kJslzPQWwPT1eyMiSxlKCgzHLOTOTQ==" crossorigin="anonymous"></script>
+  
+  <!--  Styles  -->
+  <link rel="stylesheet" href="styles/form.css">  
+  
+</head>
+<body>
+  
+  
+  <form method="post" name="web_design_GITHUB" data-netlify='true' netlify>
+    <fieldset>
+      <legend>Volunteer Form</legend>
+      
+    <!-- full name -->
+    <label for="full-name">Full Name</label> (required)
+    <input type="text" name="full_name" id="full-name" class="input" required />
+      
+    <!-- age -->
+    <label for="Age">Age</label> (required)
+    <input type="number" name="Age" id="Age" class="input" min="16" max="120" required />
+      
+    <!-- t-shirt size-->  
+    <label for="t-shirt">T-Shirt Size:</label> (required)
+    <select name="t_shirt" id="t-shirt" class="select" required>
+      <option>Select Size</option>
+      <option value="Xs">Xs</option>
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
+      <option value="CUSTOM">CUSTOM</option>
+    </select>  
+      <input type="text" name="custom" id="CUSTOM" class="input" placeholder="custom size" disabled required />
+      <!--Tshirt Size-->
+      
+    <!-- can i use -->
+    <label for="email">Email</label> (required)
+    <input type="email" name="your_email" id="email" class="input" required />
+      
+    <label for="phone">phone:</label> (Optional)
+    <input type="tel" name="phone" id="phone" class="input" />
+      
+    <label for="url">social media url</label> (required)
+    <input type="url" name="url" id="url" class="input" size="70" required />
+      
+    <label for="date">when can you begin</label> (required)
+    <input type="date" name="begining_date" id="date" class="input" required />
+      
+    <label for="color">color</label>
+    <input type="color" name="color" id="color" class="input" />
+    <!-- can i use end-->
+      
+      
+    <!--time of day-->
+    <label for="time of day">Time of Day</label><br />
+    <input type="checkbox" name="time_of_day" id="time of day" class="checkbox" value="morning" required />
+    <span class="checkbox-text">Morning</span><br />  
+      
+    <input type="checkbox" name="time_of_day" class="checkbox" value="afternoon" />
+    <span class="checkbox-text">Afternoon</span><br />  
+      
+    <input type="checkbox" name="time_of_day" class="checkbox" value="evening" />
+    <span class="checkbox-text">Evening</span><br />  
+    <!--time of day-->
+      
+    <!-- Veteran -->
+      <label for="veteran">Are you a USA veteran?</label><br />
+      <input type="radio" name="veteran" value="yes" class="radio" required id="veteran"/>
+      <span class="radio-text">Yes</span>
+      
+      <input type="radio" name="veteran" value="no" class="radio" />
+      <span class="radio-text">No</span><br /><br />
+    <!-- end Veteran -->
+      
+     <!-- upload document --> 
+      <label for="file">background check:</Label>
+      <input type="file" name="file" id="file" class="input" accept=".pdf" required />
+      
+      <!-- Comments -->
+      <label for="about-you">Tell Us About You</Label> (Optional)<br />
+      <textarea name="comments" id="about-you" class="textarea" cols="70" rows="7"></textarea>
+      
+      
+      
+      
+    <br> </br>
+    <input type="submit" class="submit" name="submit" value="Volunteer Now!" />
+    
+    </fieldset>
+  </form>
+  
+   <!-- Scripts -->
+  <script src="scripts/form.js"></script>
+  
+</body>
+</html>
